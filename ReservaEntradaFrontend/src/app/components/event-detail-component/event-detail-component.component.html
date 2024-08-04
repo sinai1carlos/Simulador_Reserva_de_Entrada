@@ -1,0 +1,13 @@
+<!-- src/app/components/event-detail-component/event-detail-component.component.html -->
+<div *ngIf="event">
+    <h1>{{ event.name }}</h1>
+    <p>{{ event.description }}</p>
+    <p><strong>Date:</strong> {{ event.date}}</p>
+    <p><strong>Venue:</strong> {{ event.venue }}</p>
+    
+    <button (click)="reserve()">Reserve Now</button>
+  </div>
+  <div *ngIf="!event">
+    <p>Loading event details...</p>
+  </div>
+  

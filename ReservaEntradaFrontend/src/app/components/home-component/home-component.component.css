@@ -1,0 +1,14 @@
+/* Estilos básicos para la página de inicio */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  

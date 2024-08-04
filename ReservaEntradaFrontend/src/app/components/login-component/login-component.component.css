@@ -1,0 +1,17 @@
+form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  button {
+    margin-top: 15px;
+  }
+  

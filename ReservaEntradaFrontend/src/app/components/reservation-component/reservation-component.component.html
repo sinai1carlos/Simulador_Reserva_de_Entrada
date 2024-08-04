@@ -1,0 +1,20 @@
+<div *ngIf="isLoading">
+    <p>Loading event details...</p>
+  </div>
+  
+  <div *ngIf="!isLoading && event">
+    <h1>Reserve for {{ event.name }}</h1>
+    <p><strong>Date:</strong> {{ event.date}}</p>
+    <p><strong>Venue:</strong> {{ event.venue }}</p>
+  
+    <h3>Select a seat</h3>
+    <ul>
+      <!-- Aquí deberías listar los asientos disponibles -->
+      <li *ngFor="let seat of event.seats" (click)="selectSeat(seat.number)">
+        {{ seat.number }} ({{ seat.status }})
+      </li>
+    </ul>
+  
+    <button (click)="reserve()">Confirm Reservation</button>
+  </div>
+  
